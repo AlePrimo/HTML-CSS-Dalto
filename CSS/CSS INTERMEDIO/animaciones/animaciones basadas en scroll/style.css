@@ -1,0 +1,83 @@
+body {
+    margin: 0;
+    font-family: sans-serif;
+    background-color: #ccc;
+    height: 200vh;
+    
+    
+}
+
+* {
+    box-sizing: border-box;
+}
+
+div {
+    box-sizing: border-box;
+}
+
+
+.crecedor {
+    height: 200vh;
+}
+
+.container {
+   
+   scroll-timeline: --containerScroll block;
+   overflow-y: scroll;
+   height: 50vh;
+
+   /*ACA SE DEFINIO UNA CAJA QUE CONTIENE A LA BARRA Y SE LE DIO UN PARAMETRO DE SCROLL TIMELINE PARA QUE LA BARRA SE ANIME SEGUN ESTE SCROLL Y NO EL DE LA PAGINA COMPLETA
+   GENERALMENTE SE USA EL DE LA BARRA COMPLETA*/
+}
+
+
+.box {
+   
+    background-color: #fff;
+    border: 4px solid #48e;
+    padding: 6px;
+    border-radius: 39px;
+    position: fixed;
+    width: 100%;
+}
+
+
+    .barra {
+        padding: 40px;
+        background-color: #48e;
+        border-radius: 30px;
+        width: 10%;
+        color: #fff;
+        animation-name: llenar-barra;
+        animation-fill-mode: both;
+        animation-timing-function:linear;
+        animation-timeline: --containerScroll;/*ACA DEFINIMOS EL TIMELINE DE LA ANIMACION DE LA BARRA SEGUN EL SCROLL QUE HICIMOS PARA EL  CONTENEDOR, GENERALMENTE SE USA EL SCROLL DE LA PAGINA, A LO QUE TENDRIAMOS QUE HABER PUESTO scroll()*/
+       
+        
+
+
+    }
+
+
+.barra:active {
+    animation-play-state: paused;
+}
+
+
+
+    @keyframes llenar-barra {
+        from {
+            width: 0%;
+            
+
+        }
+
+        to{
+        width: 100%;
+        background-color: #f33;
+        }
+    }
+
+
+
+

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Accesibilidad Web</title>
+</head>
+<body>
+<!--EN ESTA SECCION SE HABLA DE COMO CREAR EL CODIGO HTML, DE MANERA QUE SEA ACCESIBLE PARA PERSONAS CON DISCAPACIDADES. HAY EXTENSIONES QUE SE PUEDEN AGREGAR AL NAVEGADOR QUE NOS PERMITEN ESCUCHAR EL CODIGO QUE VAMOS HACIENDO, POR LO TANTO VA A CONVENIR QUE CADA ETIQUETA O FUNCIONALIDAD QUE LE DAMOS A LA PAGINA TENGA UN TITULO DESCRIPTIVO PARA QUE LA PERSONA DISCAPACITADA SEPA CON QUE ESTA INTERACTUANDO, POR EJEMPLO EN UNA IMAGEN SI LE DAMOS EL ATRIBUTO
+ARIA-LABEL="DESCRIPCION DE LA IMAGEN" SE ESCUCHARA LA DESCRIPCION-->
+<a href="../../HTML BASICO/imagenes/pizza.png"
+aria-label="imagen de pizza">una pizza</a>
+<div aria-label="parrafo del lorem">
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Accusantium optio dolor architecto, adipisci sunt nisi vel error incidunt! Sunt quibusdam eos quia ad assumenda nisi consequatur ea, magni quae qui!</p>
+</div>
+
+<fieldset>
+    <select name="frutas" aria aria-label="Selecciona una fruta">
+        <option value="manzana" aria-label="manzana">manzana</option>
+        <option value="banana" aria-label="banana">banana</option>
+    </select>
+</fieldset>
+
+</body>
+</html>

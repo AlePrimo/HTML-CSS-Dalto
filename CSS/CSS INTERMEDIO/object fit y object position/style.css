@@ -1,0 +1,16 @@
+body {
+    margin: 0;
+    font-family: sans-serif;
+}
+/*EL OBJECT FIT Y EL OBJECT POSITION ES PARA DARLE ESTILO A IMAGENES Y VIDEOS, NOS PERMITE AJUSTAR EL TAMAÑO Y LA POSICION*/
+img {
+    width: 1400px;
+    height: 1200px;
+    object-fit: contain;/*estos valores de object fit determinaran como la imagen rellena las dimensiones que le demos*/
+    border: 2px solid #000;
+    margin-top: 50px;
+    margin-left: 50px;
+    object-position: center;/*esta propiedad tiene distintos valores y tambien se los podemos dar nosotros como si fuese un padding, lo que hace es posicionar la imagen dentro de las dimensiones que le hayamos dado*/
+
+
+}

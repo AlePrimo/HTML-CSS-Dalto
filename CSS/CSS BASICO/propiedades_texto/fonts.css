@@ -1,0 +1,43 @@
+
+
+
+
+
+@font-face{
+    font-family: "montserrat";
+    src: url("fonts/MontserratAlternates-ExtraLight.ttf") format("truetype");
+    font-weight: 100;
+
+}
+
+
+
+
+@font-face {
+    font-family: "montserrat";
+    src: url("fonts/MontserratAlternates-Regular.ttf") format("truetype");
+    font-weight: 400;
+
+
+}
+@font-face{
+    font-family: "montserrat";
+    src: url("fonts/MontserratAlternates-ExtraBold.ttf") format("truetype");
+    font-weight: 700;
+
+}
+@font-face{
+    font-family: "montserrat";
+    src: url("fonts/MontserratAlternates-Bold.ttf") format("truetype");
+    font-weight: 500;
+
+}
+
+
+
+@font-face{
+    font-family: "montserrat";
+    src: url("fonts/MontserratAlternates-Black.ttf") format("truetype");
+    font-weight: 900;
+
+}

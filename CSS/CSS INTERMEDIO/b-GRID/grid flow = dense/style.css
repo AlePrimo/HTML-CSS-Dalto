@@ -1,0 +1,51 @@
+
+
+
+
+
+
+body {
+    margin: 0;
+    font-family: sans-serif;
+   
+}
+
+body, div{
+    box-sizing: border-box;
+}
+
+.grid {
+    display:grid;
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    grid-auto-flow: dense;/*AL DARLE ESTE VALOR RELLENAMOS AUTOMATICAMENTE CUALQUIER HUECO QUE QUEDE EN BLANCO EN EL LAYOUT CUANDO CAMBIA EL TAMAÑO DE LA PANTALLA*/
+    margin: auto;
+    gap: 10px;
+    padding: 10px;
+    min-height: 100vh;
+
+    }
+
+
+.grid-item {
+    background-color: #48e;
+    font-size: 30px;
+    border-radius: 16px;
+    background-image: url(pizzita.png);
+    background-position: center;
+    background-size: cover;
+
+}
+
+.grid-item:nth-child(10){
+    grid-column: span 4;
+}
+
+.grid-item:nth-child(7) {
+    grid-column: span 3;
+    grid-row: span 2;
+}
+
+
+.grid-item:hover{
+    opacity: 0.74;
+}

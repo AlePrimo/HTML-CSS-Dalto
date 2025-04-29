@@ -1,0 +1,27 @@
+
+body {
+    background-color: rgb(12, 60, 219);
+    margin: 0;
+    font-family: sans-serif;
+    color: rgb(229, 229, 235);
+}
+
+h2 {
+    color:white;
+    text-align: center;
+    font-size: 16px;
+}
+
+.box {
+    width: 100%;
+    height: 100px;
+    margin: 0;
+    background-size:cover;
+    background-position: top;
+    background-attachment: scroll;
+    background-color: #0006;/*EL BACKGROUND SOLO ES UN SHORTHAND, BACKGROUND TIENE MUCHAS PROPIEDADES, EN ESTE CASO NO SOLO LE DAMOS COLOR SINO QUE TAMBIEN LE DAMOS OPACIDAD, POR LO TANTO VA A SER TRANSPARENTE*/
+    background-image: url(https://www.famousbirthdays.com/faces/dalto-lucas-image.jpg);
+    
+    /*BACKGROUND TIENE UN MONTON DE PROPIEDADES, LAS NOMBRO TODAS, ES IMPOSIBLE ACORDARSE*/
+
+}

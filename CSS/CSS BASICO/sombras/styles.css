@@ -1,0 +1,49 @@
+body {
+    margin: 0;
+    
+}
+
+.box {
+    width: 280px;
+   
+    background: #e2e2e2;
+padding: 20px;
+box-sizing: border-box;
+    margin: auto;
+    margin-top: 50px;
+    box-shadow:0px 0px 30px 10px #0007 ;/*EL PRIMER PARAMETRO ES EL MOVIMIENTO HORIZONTAL , EL SEGUNDO PARAMETRO ES EL MOVIMIENTO VERTICAL(SI LOS DEJAMOS EN 0 QUEDA UN EFECTO MAS PAREJO)
+    EL TERCER PARAMETRO ES EL DESENFOQUE(QUEDA MEJOR UN PARAMETRO GRANDE 40 A 60PX)Y EL CUARTO PARAMETRO ES LA EXTENSION DE LA SOMBRA(TAMBIEN LO DEJA EN 0) Y POR ULTIMO EL COLOR DE LA SOMBRA*/
+    color:#444 ;
+    font-family: sans-serif;
+    padding-top: 10px;
+    text-align: center;
+}
+h2{
+    margin-top: 5px;
+    font-size: 18px;
+    color: #777;
+    letter-spacing: 3px;
+    font-weight: 100;
+    text-shadow: 0px 0px 3px #f92;
+}
+p {
+    list-style: none;
+    text-align: justify;
+    line-height: 1.4;
+    font-size: 14px;
+    text-shadow: 0 0 5px rgb(176, 204, 16); /*EL TEXT SHADOW TIENE LOS MISMOS PARAMETROS QUE EL BOX SHADOW MENOS EL CUARTO PARAMETRO DE LA EXTENSION, SE PODRIA USAR PARA RESALTAR UNA PARTE DE UN TEXTO QUE PONGAMOS DENTRO DE UN SPAN*/
+}
+
+span{
+    text-shadow: 0 0 7px rgb(231, 4, 4); 
+}
+
+img {
+    width: 160px;
+  
+    margin: auto;
+  filter: drop-shadow(0px 0px 3px #f92);/*ESTE TIPO DE SOMBRAS ES PARA IMAGENES QUE TIENEN UN FONDO TRANSPARENTE*/
+   
+    
+   
+}

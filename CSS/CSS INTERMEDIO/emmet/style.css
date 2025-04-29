@@ -1,0 +1,9 @@
+header {
+    margin: 100px;/*EN CSS LOS EMMET TAMBIEN ESTAN, SI YO PONGO M10 ME VA A SALIR UN MARGIN DE 10PX, SI PONGO M10P ESTO SERIA PORCENTAJE, SI PONGO M10E ESTO ES EM*/
+    bottom: 20px;
+    /*P10P10P = PADDING 10% 10 %*/
+    padding: 20px 10%;
+    /*bgc#333 = background-color : #333
+    c#f00 = color :#f00*/
+    color: #333;
+}

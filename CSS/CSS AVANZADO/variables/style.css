@@ -1,0 +1,64 @@
+body {
+    margin: 0;
+    font-family:sans-serif;
+    padding: 20px;
+    --color-principal:red;/*POR MAS QUE SE LLAME DEL MISMO NOMBRE QUE LA VARIABLE DEFINIDA DENTRO DE BOX, ESTA SOLO SE APLICARA A LOS ELEMENTOS DENTRO DEL BODY QUE NO ESTEN DENTRO DE LOS BOX*/
+    --tamaño-principal:2.4rem;
+}
+
+
+
+* {
+    box-sizing: border-box;
+}
+.box {
+    --color-principal:#48e;/*CREAMOS UNA VARIABLE PONIENDO DOS GUIONES , EL NOMBRE DE LA VARIABLE Y DANDOLE UN VALOR*/
+   
+    display: grid;
+    place-content: center;
+    color: #fff;
+    margin: 120px auto;
+    font-size: 30px;
+    padding: 0 40px;
+    border: 6px solid black;
+    font-size: clamp(var(--tamaño-principal),2.2vw,4rem);
+
+
+
+
+}
+
+.box:first-child {
+    background-color:var(--color-principal);/*ACCEDEMOS A LA VARIABLE MEDIANTE LA FUNCION VAR(NOMBRE DE LA VARIABLE)*/
+}
+
+
+.box:nth-child(2){
+    color: var(--color-principal);
+    border: 6px solid var(--color-principal);
+}
+
+h1 {
+    font-size: 2.2em;
+    margin-bottom: 0;
+
+}
+
+body > p {
+    font-size: 60px;
+    color: var(--color-principal);
+}
+
+/*OTRA FORMA DE CREAR UNA VARIABLE PERO QUE YA SEA UNA VARIABLE GLOBAL QUE VA A SER USADA EN TODO EL AMBITO DE LA PAGINA ES DE LA SIGUIENTE MANERA (HOUDINI)
+
+@property --color-principal {
+
+    syntax: "<color>"; aca definimos el tipo de dato que va a esperar la propiedad
+
+    inherits: false;aca definimos si va a ser heredable o no
+
+    initial-value: #48e;aca le damos el valor inicial a la variable, que luego podemos cambiar de manera local 
+}
+
+
+*/

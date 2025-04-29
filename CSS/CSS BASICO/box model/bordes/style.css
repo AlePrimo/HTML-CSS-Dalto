@@ -1,0 +1,35 @@
+div {
+    background:wheat;
+    width: 350px;
+    height: 50px;
+    margin: auto;
+    text-align: center;
+    letter-spacing: 3px;
+    font-size: 20px;
+}
+
+div {
+    border: 4px solid black;
+    border-radius: 4px;
+
+}
+
+body {
+   background-color: cadetblue;
+}
+
+.user {
+width: 30%;
+    margin: 150px;
+    padding: 5px 10px;
+    border: 3px solid burlywood;
+    
+}
+
+.pass {
+    width: 30%;
+    margin: 150px;
+    padding: 5px 10px;
+    border: 3px solid burlywood;
+
+}

@@ -1,0 +1,56 @@
+
+body {
+    margin: 0;
+    font-family: sans-serif;
+    background-color: #ccc;
+}
+
+div, body {
+    box-sizing: border-box;
+}
+.flexbox {
+    display: flex;
+    flex-direction:row;
+    flex-wrap: wrap; 
+    height: 100px;
+    margin: 20px;
+    border:2px solid #000;
+    align-items:center;
+    justify-content: space-evenly;
+    background-color: #fff;
+
+
+
+}
+
+
+.flex-item {
+    
+    background-color:#800;
+    width: 100px;
+    color: #fff;
+    font-size: 40px;
+    text-align: center;
+
+    border: 1px solid #000;
+    margin: auto;
+}
+
+.flex-item:first-child{
+    background-color: #f77;
+    order: 1;
+   
+}
+
+.flex-item:last-child {
+    background-color: #000;
+    
+   
+}
+
+/*LA PROPIEDAD ORDER CAMBIA EL ORDEN EN QUE SE VISUALIZAN LOS ELEMENTOS, NO CAMBIA EL ORDEN EN QUE ESTAN CREADOS SINO EL ORDEN EN QUE SE VEN.
+LOS ELEMENTOS POR DEFECTO TIENE ORDEN 0, ASI QUE LO QUE HICIMOS ACA ES QUE EL PRIMER ELEMENTO LE DIMOS 1 Y COMO LOS DEMAS SON 0 QUEDARON PRIMEROS QUE ESTE. PODRIAMOS DARLE VALOR "0" AL ELEMENTO 1 Y VALOR "-1" A LOS DEMAS Y QUEDARIA EXACTAMENTE IGUAL.
+COMO NO SE CAMBIA EL ORDEN EN EL DOM NO CAMBIA LA ACCESIBILIDAD*/
+
+
+

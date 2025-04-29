@@ -1,0 +1,21 @@
+body {
+    margin: 0;
+    font-family: sans-serif;
+}
+
+.container {
+    container-type: inline-size;/*CON ESTE VALOR DEFINIMOS QUE EL CONTENEDOR SE ADAPTARA EN ANCHO*/
+    container-name: main;/*CON ESTE ATRIBUTO DE CONTAINER NAME LE ASIGNAMOS UN NOMBRE Y POR LO TANTO DESPUES PODEMOS APLICAR EL CONTAINER QUERY A ESTE CONTENEDOR EN PARTICULAR*/
+}
+
+p {
+    font-size: 8px;
+}
+            /*si tiene menos de 600px*/
+@container main (max-width: 600px) {
+    p{
+        font-size: 20px;
+        color: #f00;
+        background-color: #000;
+    }
+}/* CON LA PALABRA RESERVADA CONTAINER MAS EL NOMBRE LE DAMOS UNA CONDICION, SI LA CUMPLE SE LE DAN LAS PROPIEDADES DE ESTILO QUE QUERAMOS*/

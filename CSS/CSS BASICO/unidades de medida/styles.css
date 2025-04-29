@@ -1,0 +1,41 @@
+
+
+div {
+    background: #ededed ;
+padding: 20px;
+    font-family: sans-serif;
+    border-left: 5px solid #999 ;
+    font-size: 14px;
+    height: 80vh;
+    width: 80vw;
+    margin-top: 10vh;
+    margin: auto;
+    
+
+}
+
+h1{
+    margin: 0;
+    font-size: 24px;
+   
+}
+
+span {
+    color :#999;
+    font-size: 16px;
+    font-weight: 100;
+}
+
+p{
+    color:#555;
+    font-size: 2em; /*em equivale al font-size del contenedor padre(en este caso el div)o sea 28px */
+
+}
+
+/*LAS UNIDADES DE MEDIDA PUEDEN SER RELATIVAS O ABSOLUTAS ,  LAS ABSOLUTAS SON mm , cm , in(pulgadas) o pixeles (px), LAS RELATIVAS SON 
+%(porcentaje del contenedor), em(equivale al fontsize del contenedor ) y rem (equivale al font size del elemento raiz o sea html)*/
+
+/*SI EL ELEMENTO CONTENEDOR NO TIENE DEFINIDO EL FONT SIZE , EM BUSCARA EN EL ELEMENTO QUE CONTIENE A ESE CONTENEDOR Y ASI SUCESIVAMENTE, Y SI NO HAY UN FONT SIZE  DEFINIDO USARA EL DEL NAVEGADOR (16PX)*/
+
+/*TAMBIEN TENEMOS LAS MEDIDAS vh (viewport height)
+O vw (viewport width)QUE TOMAN COMO REFERENCIA LA VENTANA DEL NAVEGADOR Y CORRESPONDEN A UN PORCENTAJE DE LA MISMA(NO SE PONE EL %)*/

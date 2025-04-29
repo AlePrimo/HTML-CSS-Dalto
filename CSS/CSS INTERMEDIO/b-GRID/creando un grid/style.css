@@ -1,0 +1,29 @@
+body {
+    margin: 0;
+    font-family: sans-serif;
+}
+
+.grid {
+    display:grid;/*aca definimos que va a ser una grilla, si no definimos nada mas sera una grilla de filas */
+    grid-template-columns: 40% 200px 200px;/*con este atributo definimos la cantidad(cada valor es una columna) y el ancho de las columnas de la grilla, podemos darle un tamaño en px o en porcentaje y cuando la pagina crezca o se achique tambian lo hara la columna*/
+    grid-template-rows: 80px 300px;/*lo mismo que lo de arriba nada mas que le damos la cantidad de filas y el alto de las mismas*/
+     /*AL DARLE VALORES A LAS FILAS Y A LAS COLUMNAS CREAMOS UNA GRILLA, AUNQUE NO HAYA ELEMENTOS , LAS CELDAS ESTARAN IGUAL*/
+    /*auto : si le damos valor auto a columnas o filas, esto hara que primero calcule el espacio minimo que necesita la celda para contener el contenido del elemento y lo que sobra lo distribuye entre aquellas filas o columnas que sean auto*/
+    /*fr : este valor lo que hace es dividir en fracciones del tamaño disponible sin tener en cuenta el espacio minimo(igual si algun elemento tiene mas contenido que el otro se va a adaptar)*/
+
+
+
+
+}
+
+
+.grid-item {
+    background-color: #48e;
+    margin: 10px;/*al darle display grid los margenes no colapsan por lo tanto el margen entre items sera de 20px*/
+    padding: 10px;
+    font-size: 30px;
+    color: #fff;
+    
+    
+
+}

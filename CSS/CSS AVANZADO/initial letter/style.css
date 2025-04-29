@@ -1,0 +1,30 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: sans-serif;
+}
+
+.box {
+    font-size: 30px;
+    padding: 0 40px;
+    border: 2px solid red;
+    
+}
+
+p::first-letter {
+    initial-letter: 3 1 ;/* EL PRIMER VALOR ES LA CANTIDAD DE LINEAS QUE VA A OCUPAR VERTICALMENTE Y EL SEGUNDO VALOR ES DESDE QUE RENGLON VA A OCUPAR ESAS LINEAS , EN ESTE CASO VA A TENER UN TAMAÑO DE TRES LINEAS Y VA A EMPEZAR EN EL SEGUNDO RENGLON PARA ARRIBA*/
+    color: red;
+    font-weight: bolder;
+    padding: 2px;
+    padding-bottom: 0;
+    padding-left: 2px;
+   
+
+
+    
+
+}
+

@@ -1,0 +1,28 @@
+body {
+    margin: 0;
+    font-family: sans-serif;
+    background-color: #bbb;
+}
+
+.box {
+
+    width: 240px;
+    height: 240px;
+    margin: auto;
+    margin-top: 50px;
+    background-color: #fff;
+    border: 1px solid #0006;
+    /* white-space: normal;/*tenemos normal, nowrap(no deja saltos de linea),pre, pre-wrap
+    text-overflow: ellipsis;este valor acompañado del overflow hidden nos pone los tres puntitos en el texto cuando este desborda el contenedor donde este
+    word-break: auto;
+    word-wrap: anywhere; INVESTIGAR PORQUE ES UN EMBOLE*/
+    text-wrap: pretty;/*este valor nos acomoda mejor las palabras para que no queden solas en un renglon*/
+    
+
+
+
+}
+
+h1 {
+    text-wrap: balance;/*balancea el texto para que encajen de una manera mas linda y estetica*/
+}

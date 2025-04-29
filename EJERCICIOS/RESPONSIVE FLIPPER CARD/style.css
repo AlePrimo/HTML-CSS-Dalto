@@ -1,0 +1,138 @@
+    * {
+        box-sizing: border-box;
+    }
+
+    body,div,ul,li,a,h1,h2,h3,h4,p {
+        margin: 0;
+        padding: 0;
+    }
+
+    body {
+        --bg-color:color-mix(in srgb, #48e 70%, #fff 40%);
+        --card-bg-color:#fff6;
+        --card-color:#fff;
+        --dark-color:#48e;
+        --text-color:#444;
+        background-color: var(--bg-color);
+        font-family: sans-serif;
+        display: flex;
+        flex-direction:column;
+      
+    }
+
+
+    .card {
+        max-width: clamp(160px, 50%, 320px);
+        background-color:var(--card-bg-color) ;
+        margin: 50px auto;
+        position: relative;
+        border-radius: 20px;
+      
+        
+    
+    }
+
+
+    .card__back, .card__front {
+        backface-visibility: hidden;/*ESTO HACE QUE LA CARA DE ATRAS DE LA TARJETA ESTE OCULTA A LA VISTA*/
+        transition: transform 1s;
+        background-color: var(--card-color);
+        border-radius: 20px;
+        overflow: hidden;
+        padding-bottom: 6px;
+    
+    }
+
+
+    .card:hover .card__front{
+
+        transform: perspective(1100px) rotateY(180deg); 
+    }
+
+
+
+    .card:hover .card__back{
+
+        transform: perspective(1100px) rotateY(360deg); 
+    }
+
+
+
+    .card__front{
+
+        transform: perspective(1100px) rotateY(0deg); 
+    }
+    .card__back{
+        position: absolute;
+        top: 0;
+        width: 100%;
+        height: 100%;
+       
+        padding: 12px;
+        transform: perspective(1100px) rotateY(180deg);/*PERSPECTIVE NOS ALEJA O ACERCA LA IMAGEN DEPENDE DE LOS PX QUE LE DEMOS, A MENOS PX PARECE COMO QUE LA IMAGEN ESTA MAS CERCA, EN ESTA ANIMACION LA TARJETA GIRARIA MAS CERCA DE NOSOTROS*/
+    }
+
+    .card__back span {
+        font-size: 1.5rem;
+        margin: 6px 0;
+    }
+
+    .card__worker {
+        max-height: 150px;
+        overflow: hidden;
+        display: block;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+    }
+
+    .card__worker img {
+        max-width: 100%;
+        
+    
+    }
+
+    .card__data {
+        padding: 12px;
+    }
+
+    .card__data span {
+        font-size: 1.4rem;
+        margin: 6px 0;
+        display: block;
+    }
+
+    .skill-bar {
+        border: 3px solid var(--bg-color);
+        margin: 12px;
+        padding: 3px;
+        border-radius: 4px;
+    }
+
+    .skill-bar div {
+        background-color:var(--bg-color);
+        padding: 9px;
+        columns: var(--card-color);
+
+    }
+
+    .skill-bar:nth-child(2) div {
+        width: 70%;
+    }
+
+
+    .skill-bar:nth-child(3) div {
+        width: 70%;
+    }
+
+
+    .skill-bar:nth-child(4) div {
+        width: 80%;
+    }
+
+
+    .skill-bar:last-child div {
+        width: 90%;
+      
+    }

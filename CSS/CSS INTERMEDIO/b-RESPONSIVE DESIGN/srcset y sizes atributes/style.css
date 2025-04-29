@@ -1,0 +1,23 @@
+
+/*SOURCE SET Y SIZE SON DOS ATRIBUTOS QUE SE USAN JUNTOS PARA PODER CARGAR IMAGENES DE MANERA RESPONSIVE*/
+
+
+
+
+
+body {
+    margin: 0;
+    font-family: sans-serif;
+    
+}
+
+div, body {
+    box-sizing: border-box;
+}
+
+img {
+    max-width: 100%;
+}
+
+
+

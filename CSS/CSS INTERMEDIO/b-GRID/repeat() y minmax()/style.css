@@ -1,0 +1,33 @@
+body {
+    margin: 0;
+    font-family: sans-serif;
+}
+
+.grid {
+    display:grid;
+    height: 100vh;
+    /*grid-template-columns: repeat(4, 1fr);al valor repeat le pasamos por parametro primero la cantidad de columnas o cantidad de veces que se repetira el tamaño que le pasemos como segundo parametro.
+    TAMBIEN PODEMOS PASARLE EL VALOR REPEAT Y AGREGARLE COLUMNAS CON DIFERENTES TAMAÑOS
+    EJ: 200px repeat(4, 100px) 100px esto hara que se creen 1 columna de 200, 4 de 100 y al final 1 de 100
+    Y TAMBIEN SE LE PUEDE PASAR UN PATRON Y SE REPETIRA LAS VECES QUE LE DIGAMOS
+    EJ : repeat(4, 100px 200px)tendremos 8 columnas 1ra de 100 2da de 200, 3era de 100 y 4ta de 200  etc
+    */
+    grid-template-columns: repeat(2,minmax(100px,300px)) 1fr;/*este es el valor minmax al cual le pasamos los parametros min y max que queremos que midan de ancho las columnas(si fuesen filas seria el alto), en este caso lo usamos con un repeat para que nos genere 3 columnas con un minimo de 100 y un maximo de 300,y una cuarta columna de 1 fraccion, y segun la resolucion se iran adaptando al tamaño de la pantalla*/
+    grid-template-rows: 200px 200px  1fr; 
+
+
+
+
+}
+
+
+.grid-item {
+    background-color: #48e;
+    margin: 10px;/*al darle display grid los margenes no colapsan por lo tanto el margen entre items sera de 20px*/
+    padding: 10px;
+    font-size: 30px;
+    color: #fff;
+    
+    
+
+}

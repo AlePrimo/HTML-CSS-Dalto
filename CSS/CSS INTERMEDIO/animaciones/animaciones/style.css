@@ -1,0 +1,66 @@
+body {
+    margin: 0;
+    font-family: sans-serif;
+    background-color: #ccc;
+}
+
+
+div {
+    box-sizing: border-box;
+}
+
+
+.box {
+    margin: 20px;
+    background-color: #fff;
+    border: 4px solid #48e;
+    padding: 6px;
+    border-radius: 39px;
+    
+}
+
+
+.barra {
+    padding: 40px;
+    background-color: #48e;
+    border-radius: 30px;
+    width: 10%;
+    color: #fff;
+    animation-name: llenar-barra;
+    animation-duration: 3s;
+    animation-delay: 1s;/*TAMBIEN SE LE PUEDEN DAR VALORES NEGATIVOS Y ESTOS SE LE RESTAN A LA DURACION DE LA ANIMACION */
+    animation-fill-mode: both;/*
+    backwards :AL DARLE ESTE PARAMETRO AL EMPEZAR LA ANIMACION DESPUES DEL DELAY LA BARRA TOMARA LOS VALORES  DE FROM QUE LE DAMOS EN EL KEYFRAMES ,
+    SI LE PUSIERAMOS BOTH LA BARRA TOMARIA LOS PARAMETROS DEL FROM SIN ESPERAR EL DELAY
+    TAMBIEN SE LE PUEDE DAR BACKWARDS Y LO QUE HARIA ES QUE LA BARRA TOMARIA LOS VALORES DEL FROM  DESDE ANTES DEL DELAY Y CUANDO TERMINE VOLVERIA A LOS VALORES ORIGINALES*/
+    animation-timing-function: linear;/*ESTE VALOR DE ANIMACION LO QUE HACE ES QUE LA ANIMACION EMPIECE Y TERMINE A LA MISMA VELOCIDAD, O SEA QUE LA VELOCIDAD SERA LINEAL EN EL TIEMPO*/
+    animation-iteration-count:infinite;/*ESTE VALOR LO QUE HACE ES QUE LA ANIMACION SE REPITA INFINITAMENTE, TAMBIEN SE LE PUEDE DAR UN NUMERO N DE CANTIDAD DE VECES Y SINO POR DEFECTO VIENE EN 1*/
+
+    animation-direction:alternate;
+
+
+}
+
+
+.barra:active {
+    animation-play-state: paused;
+}
+
+
+
+@keyframes llenar-barra {
+    from {
+        width: 0%;
+        
+
+    }
+
+    to{
+    width: 100%;
+    background-color: #f33;
+    }
+}
+
+
+
+

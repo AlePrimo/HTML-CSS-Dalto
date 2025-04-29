@@ -1,0 +1,32 @@
+body {
+    margin: 0;
+    font-family: sans-serif;
+}
+
+div, body {
+    box-sizing: border-box;
+
+}
+
+.flexbox {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: auto;
+    max-width: 600px;
+}
+.bloque {
+    display: inline-block;
+    min-width: 200px;/*EL ANCHO CONVIENE DARLE UN MINIMO Y UN MAXIMO PARA QUE EL CONTENIDO SE ADAPTE*/
+   
+    /*min-height: 300px;EL ALTO NO CONVIENE DARLE UN VALOR PERO SI CONVIENE DARLE UN MINIMO, PARA QUE SE ADAPTE EL CONTENIDO Y NO DESBORDE DEL ELEMENTO CONTENEDOR*/
+    background-color: #7bf;
+    margin: auto;
+   
+    width: 100%;
+    flex: 1;
+    font-style: 12px;
+    padding: 10px;
+    margin: 4px;
+
+}

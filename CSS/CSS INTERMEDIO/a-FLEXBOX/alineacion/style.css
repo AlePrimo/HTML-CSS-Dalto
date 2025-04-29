@@ -1,0 +1,60 @@
+
+body {
+    margin: 0;
+    font-family: sans-serif;
+}
+
+div, body {
+    box-sizing: border-box;
+}
+.flexbox {
+    display: flex;
+    flex-direction:row;
+    flex-wrap: wrap; 
+    height: 360px;
+    margin: 20px;
+    border:2px solid #000;
+    align-content:center;/*ESTA PROPIEDAD SE USA CUANDO TENEMOS MULTIPLES LINEAS, SI TUVIESEMOS UNA SOLA SE USA EL ALIGN ITEM*/
+    justify-content: center;/*ESTA PROPIEDAD ALINEA LOS ELEMENTOS SOBRE EL EJE PRINCIPAL(MAIN EXE)
+    TENEMOS : START(ACOMODA LOS ELEMENTOS DESDE EL PRINCIPIO DE LA CAJA FLEX)
+    END: ACOMODA LOS ELEMENTOS DESDE EL FINAL DE LA CAJA
+    SPACE-BETWEEN: ACOMODA EL PRIMER ELEMENTO AL COMIENZO DE LA CAJA, EL ULTIMO ELEMENTO AL FINAL DE LA CAJA Y LOS ELEMENTOS DEL MEDIO LOS CENTRA EN LA MITAD DE LA CAJA DANDOLES UNA SEPARACION IGUAL A CADA UNO.
+    SPACE AROUND : LE DA UN MARGEN IGUAL DE CADA COSTADO A CADA ELEMENTO
+    SPACE-EVENLY : ES PARECIDO A LA ANTERIOR PERO QUEDA MEJOR, PORQUE SE LE AGREGA EL ESPACIO DE LOS MARGENES ENTONCES SI QUEDA SIEMPRE LA MISMA SEPARACION ENTRE ELEMENTOS*/
+    /*align-items: start
+stretch:hace que los elementos se estiren para completar el lugar que hay en la caja flex
+start: deja que los elementos ocupen el tamaño original que poseen y los posiciona al principio
+end: lo mismo que start pero los posiciona al final
+center:lo mismo que los anteriores pero los alinea en el centro
+baseline : los acomoda segun el texto, si tenemos elementos que contienen texto con diferente tamaño de fuente, acomoda los elementos como si los textos que contienen cada elemento estuviesen todos apoyados en un mismo renglon imaginario, o sea la linea base(baseline) */
+
+
+}
+
+
+.flex-item {
+    
+    background-color:#800;
+    width: 100px;
+    color: #fff;
+    font-size: 40px;
+    text-align: center;
+
+    border: 1px solid #000;
+    margin: auto;
+}
+
+.flex-item:first-child{
+    background-color: #f77;
+   
+}
+
+.flex-item:last-child {
+    background-color: #000;
+   
+}
+
+
+/*UNA FORMA MUY USADA PARA CENTRAR ELEMENTOS ES PONERLOS DENTRO DE UNA CAJA CONTENEDORA FLEXBOX, DARLE DISPLAY FLEX A ESTA CAJA Y DARLE MARGIN AUTO AL ELEMENTO.
+SINO TAMBIEN SE PUEDE PONER EN LA CAJA FLEX
+ALIGN-ITEM O ALIGN-CONTENT = CENTER Y JUSTIFIED-CONTENT = CENTER */

@@ -1,0 +1,44 @@
+
+/*GRID IMPLICITO SON LOS VALORES QUE TIENEN LAS DISTINTAS PROPIEDADES DE GRID POR DEFECTO, SI DEFINIMOS LOS VALORES DE LAS PROPIEDADES ESTOS SE APLICARAN AUTOMATICAMENTE
+GRID EXPLICITO SON LOS VALORES QUE LE DEFINIMOS NOSOTROS SEGUN NUESTRAS NECESIDADES, O SEA LE EXPLICITAMOS LO QUE NECESITAMOS QUE REALICE*/
+
+
+
+
+body {
+    margin: 0;
+    font-family: sans-serif;
+}
+
+.grid {
+    display:grid;
+    height: 80vh;
+   
+    grid-template-columns: repeat(3, 300px);
+    grid-template-rows: repeat(3,200px);
+    grid-auto-rows: 100px; /*implicitamente si agregamos elementos a la grilla se crearan nuevas filas, ya que las columnas ya estan definidas,estas nuevas filas se adaptaran al tamaño de la grilla, o como vemos en este caso si declaramos un valor de auto-rows, las nuevas filas tendran  200px*/
+
+    grid-auto-flow: column;
+    /*ESTA PROPIEDAD LO QUE HACE ES QUE CUANDO AGREGUEMOS ELEMENTOS A LA GRILLA SE AUMENTE LA CANTIDAD DE COLUMNAS Y NO LA CANTIDAD DE FILAS QUE LO QUE VIENE IMPLICITO EN GRID*/
+    grid-auto-columns: 100px;/*
+    AUTO COLUMNS ES LO MISMO QUE AUTO ROW , LE DA UN TAMAÑO A LAS NUEVAS COLUMNAS*/
+
+
+    
+
+
+
+
+}
+
+
+.grid-item {
+    background-color: #48e;
+    margin: 10px;
+    padding: 10px;
+    font-size: 30px;
+    color: #fff;
+    
+    
+
+}

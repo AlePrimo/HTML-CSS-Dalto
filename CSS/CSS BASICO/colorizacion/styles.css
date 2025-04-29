@@ -1,0 +1,13 @@
+.box {
+   
+    background: hsl(221, 79%, 78%);
+    margin: 300px;
+    text-align: center;
+    margin-left: 100px;
+    padding: 20px 50px;
+color:hsl(220, 40%,35%);
+font-family: sans-serif;
+border-top: 2px solid hsl(220, 40%,20%);
+font-size: xx-large;
+font-weight: bold;
+}

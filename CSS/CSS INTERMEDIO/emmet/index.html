@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Emmet</title>
+</head>
+<body>
+
+  <!--   EMMET ES UN PLUGIN QUE LO QUE HACE ES CONVERTIR UNA ABREVIACION EN TODA UNA ESTRUCTURA DE CODIGO -->
+
+<!--  TAMBIEN PODEMOS CREAR VARIAS ESTRUCTURAS DE CODIGO UNA ADENTRO DE LA OTRA O REPETIR N VECES UN CODIGO QUE SABEMOS QUE SE VA A REPETIR
+
+ PARA CREAR UN CODIGO DENTRO DE OTRO CON EMMET PONEMOS  POR EJEMPLO : ul>li Y ESTO NOS CREARA UN LI DENTRO DEL UL, SIEMPRE SE USARA EL SIMBOLO >  PARA SABER QUE UN ELEMENTO VA DENTRO DE OTRO.  SI SABEMOS QUE UN ELEMENTO SE VA A REPETIR VARIAS VECES PONEMOS EL ASTERISCO Y LA CANTIDAD DE VECES QUE QUERRAMOS QUE SE REPITA EJEMPLO : ul>li*5>a (DENTRO DEL "UL" TENDREMOS 5 "LI" Y DENTRO DE CADA "LI" UN LINK DE ENLACE  "A") -->
+
+<!--  <ul>
+    <li><a href="">DEDE</a></li>
+    <li><a href="">FDFD</a></li>
+    <li><a href="">VCVC</a></li>
+    <li><a href="">RERE</a></li>
+    <li><a href="">GHGHG</a></li>
+   
+ </ul> -->
+<!-- TAMBIEN SE LE PUEDE AGREGAR UNA CLASE A ALGUNA DE LAS ETIQUETAS SUMANDOLE UN PUNTO MAS EL NOMBRE DE LA CLASE EJEMPLO : 
+ul.lista__enlaces>li.lista__items*4>a.enlaces -->
+<!-- <ul class="lista__enlaces">
+    <li class="lista__items"><a href="" class="enlaces"></a></li>
+    <li class="lista__items"><a href="" class="enlaces"></a></li>
+    <li class="lista__items"><a href="" class="enlaces"></a></li>
+    <li class="lista__items"><a href="" class="enlaces"></a></li>
+</ul> -->
+
+<!-- 
+UN EJEMPLO REAL DE ESTRUCTURA SEMANTICA DE HTML PODRIA SER UNA BARRA DE NAVEGACION DENTRO DEL HEADER , PARA ESO PODEMOS HACER LO MISMO QUE ANTES PERO ENCERRANDO EL UL DENTRO DE UN NAV Y EL NAV DENTRO DE UN HEADER ASIGNANDOLE CLASES A TODO Y PONIENDO CONTENIDO DENTRO DE CADA ENLACE Y HACIENDO QUE AUTOINCREMENTE ESE CONTENIDO, PARA ESO AGREGAMOS LAS LLAVES {} Y DENTRO DE ESTA PONEMOS EL CONTENIDO Y EL SIMBOLO DE $:
+
+header.nav>nav.nav-header>ul.lista__enlaces>li.lista__items*4>a.enlaces{Link $}
+
+TAMPOCO ES TAN RECOMENDABLE CREAR ESTAS SENTENCIAS TAN LARGAS, SI SE RECOMIENDA CREAR UN SNIPPET DE VSC PARA REUTILIZARLAS
+
+
+-->
+
+<header class="nav">
+    <nav class="nav-header">
+        <ul class="lista__enlaces">
+            <li class="lista__items"><a href="" class="enlaces">Link 1</a></li>
+            <li class="lista__items"><a href="" class="enlaces">Link 2</a></li>
+            <li class="lista__items"><a href="" class="enlaces">Link 3</a></li>
+            <li class="lista__items"><a href="" class="enlaces">Link 4</a></li>
+        </ul>
+    </nav>
+</header>
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+</body>
+</html>

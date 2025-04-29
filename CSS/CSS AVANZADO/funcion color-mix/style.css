@@ -1,0 +1,30 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: sans-serif;
+    width: 100%;
+    
+}
+
+.box {
+    font-size: 30px;
+    background-color:color-mix(in srgb, white 100%, #48e 60%);
+    width: fit-content;
+    padding: 320px;
+}
+
+.box2  {
+   
+    background-color: #f447;
+}
+
+
+.box2 p {
+    font-size: 30px;
+    padding: 320px;
+    background-color: #48e6;
+ 
+}

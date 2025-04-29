@@ -1,0 +1,51 @@
+section .item-1,
+section .item-2,
+section .item-3 {
+
+    color: red;
+}/* LO MISMO SE PUEDE HACER CON LA PSEUDOCLASE IS(clases a modificar)*/
+
+section :is(.item-1, .item-2, .item-3) {
+    color: blue;
+} /*EL :IS DEBE IR SEPARADO DE SECTION,TAMBIEN PODRIA OBVIARSE EL SECTION Y SERIA LO MISMO.
+LA DIFERENCIA CON EL :where(X) ES QUE WHERE NO CAMBIA LA ESPECIFICIDAD, POR LO TANTO EN ESTE CASO COMO TENEMOS LA PRIMERA DEFINICION DE SECTION EN ROJO CON UNA ESPECIFICIDAD 0,1,1 SI PONEMOS UN WHERE LA ESPECIFICIDAD DEL WHERE SERA DE 0,0,1 Y NO SE APLICARAN LOS CAMBIOS*/
+
+
+/*TAMBIEN TENEMOS LA PSEUDOCLASE :has(elemento x)
+QUE VERIFICA SI EL ELEMENTO PADRE(EN ESTE CASO SECTION) TIENE UN ELEMENTO DEL TIPO QUE LE PASEMOS POR PARAMETRO, SI LO TIENE APLICA LOS CAMBIOS*/
+
+section:has(.item-1){
+    background-color: aqua;
+}
+
+/*SI QUISIERAMOS MODIFICAR UN ELEMENTO SI Y SOLO SI  DESPUES DE ESTE VIENE UN ELEMENTO "X" SE HACE DE LA SIGUIENTE MANERA*/
+
+ul:has(+div){
+    background-color: brown;
+}/* SI DESPUES DEL UL VIENE UN DIV SE MODIFICA EL UL*/
+
+
+label{
+    font-weight: bold;
+}
+
+div{
+    padding: 20px;
+}
+
+label:has(input:valid) {
+    color: rgb(133, 194, 41);
+}
+
+label:has(input:invalid) {
+    color: red;
+}
+
+
+
+
+
+
+
+
+

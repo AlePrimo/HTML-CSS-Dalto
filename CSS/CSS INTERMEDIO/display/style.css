@@ -1,0 +1,88 @@
+/* body{
+    margin: 0;
+}
+
+
+div{
+  
+    background-color: #999;
+}
+
+EL PRIMER VALOR DE DISPLAY QUE VAMOS A VER ES LA PROPIEDAD "BLOCK". LA MISMA LO QUE HACE ES QUE EL ELEMENTO OCUPE TODO EL ANCHO DISPONIBLE,Y HACE QUE CADA UNO ARRANQUE EN UNA LINEA APARTE, O SEA QUE TRANSFORMA A UN ELEMENTO EN LINEA EN UN ELEMENTO EN BLOQUE POR LO TANTO CADA UNO VA A SER PARECIDO A UN DIV LO QUE NOS VA A PERMITIR DARLE PROPIEDADES DE BLOQUE(MARGIN PADDING ETC)
+a{
+    background-color: red;
+    color: white;
+    display: block;
+    border: 1px solid #000;
+    margin: 20px;
+    padding: 20px;
+
+
+}
+
+
+EL SEGUNDO VALOR ES "INLINE" QUE LO QUE HACE ES CONVERTIR UN ELEMENTO EN BLOQUE COMO ES UN PARRAFO, POR EJEMPLO, EN UN ELEMENTO EN LINEA.
+CABE RECORDAR QUE A LOS ELEMENTOS EN LINEA SOLO SE LE PUEDE DAR UN PADDING HORIZONTAL, TAMPOCO SE LE PUEDE DAR UN ALTO(INVESTIGAR LAS PROPIEDADES DE LOS ELEMENTOS EN LINEA Y LOS ELEMENTOS EN BLOQUE!).
+O SEA QUE EN LOS ELEMENTOS EN LINEA EL TAMAÑO VA A SER DETERMINADO POR EL CONTENIDO DEL MISMO Y NO VAMOS A PODER DARLE NI PADDING NI MARGIN NI HEIGHT NI WIDTH ETC
+p{
+    background-color: #000;
+    color: #fff;
+    display: inline;
+    margin: 5px;NO HACE NADA
+    height: 100px; NO HACE NADA
+    padding: 20px;NO HACE NADA
+}
+
+*/
+
+body{
+    margin: 0;
+    font-family: sans-serif;
+}
+
+.nav {
+    background-color: #48e;
+}
+
+.nav__list{
+margin: 0;
+text-align: center;
+
+}
+
+/*EL VALOR INLINE BLOCK TIENE COMO PARTICULARIDAD QUE NOS PERMITE DARLE ALGUNAS PROPIEDADES DE BLOQUE PERO LOS ELEMENTOS SEGUIRAN OCUPANDO UNA LINEA */
+.nav__item {
+    display: inline-block;
+   
+}
+
+.nav__link:hover{
+    background-color: #59e;
+}
+
+.nav__link{
+    color: #fff;
+    text-decoration: none;
+    display: inline-block;
+    padding: 10px;
+    background-color: #48e;
+}
+
+.link--button{
+border :1px solid #fff;
+background-color: #fff;
+padding: 4px 12px;
+color: #48e;
+border-radius: 3px;
+margin-left: 60px;
+
+
+}
+
+.link--button:hover{
+    background: transparent;
+    color: #fff;
+}
+
+/*EL ULTIMO VALOR QUE SE LE PUEDE DAR A DISPLAY ES NONE, LO QUE HACE QUE EL ELEMENTO NO OCUPE ESPACIO EN LA PAGINA Y NO SE REPRESENTE VISUALMENTE.ADEMAS LOS ELEMENTOS ADYACENTES SE COMPORTARAN COMO SI ESTE NO ESTUVIERA*/
+

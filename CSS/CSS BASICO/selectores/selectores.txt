@@ -1,0 +1,12 @@
+Los selectores en css pueden ser tres tipos :
+
+por elemento :
+Por ejemplo cuando en la hoja de estilo pongamos el nombre de un elemento (p de parrafo, h1 , etc) modificaremos las propiedades de todos los elementos de ese tipos
+
+por clase : 
+Cuando queramos que un elemento o varios formen parte de una clase pondremos el atributo clase en html(<li class ="ingredientes_secos">), le daremos un nombre y luego en la hoja de style llamaremos a esos elementos de esa clase con ."nombre de la clase" y le asignaremos las propiedades
+
+por id :
+
+Si queremos que un elemento en particular tenga ciertas propiedades podemos asignarle un id(de la misma manera que con la clase)  y al llamar a ese id con el numeral #id 
+le daremos las propiedades que queramos. El id debe ser unico para un solo elemento.

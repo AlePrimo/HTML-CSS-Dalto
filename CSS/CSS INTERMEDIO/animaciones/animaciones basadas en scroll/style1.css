@@ -1,0 +1,68 @@
+body {
+    margin: 0;
+    font-family: sans-serif;
+    background-color: #ccc;
+   
+    
+    
+}
+
+* {
+    box-sizing: border-box;
+}
+
+div {
+    box-sizing: border-box;
+}
+
+
+.crecedor {
+    height: 100vh;
+}
+
+.box {
+    color: #FFF;
+   
+    height: 200px;
+    view-timeline: --cajita block;
+    /*aca definimos el timeline, le damos un nombre y block significa que se mostrara segun el scroll vertical*/
+    background-color: #48e;
+    padding: 20px;
+    animation: llenar-barra both;
+    animation-timeline: --cajita;
+    animation-timing-function: linear;
+    animation-range:contain 10% cover 80% ;/*ESTE ATRIBUTO DE LA ANIMACION DETERMINA SEGUN EL VALOR QUE LE DEMOS CUANDO EMPIEZA Y TERMINA LA ANIMACION SEGUN LA POSICION EN QUE ESTE EN LA PANTALLA, EN ESTE CASO LO PUSE TODO EN UNA LINEA PERO TAMBIEN SE PUEDE PONER animation-range-start :xxx  y animation-range-end :xxx*/
+
+    
+    /*view():CON ESTE VALOR LA ANIMACION COMENZARA APENAS EL ELEMENTO SEA VISIBLE EN EL VIEWPORT, Y DURARA EL TIEMPO QUE SEA VISIBLE*/
+
+}
+
+
+
+
+
+
+
+ 
+
+
+
+        @keyframes llenar-barra {
+            from {
+                width: 0;
+                font-size: 0px;
+                
+
+            }
+
+            to{
+                font-size: 50px;
+                width: 100%;
+            background-color: #f33;
+            }
+        }
+
+
+
+

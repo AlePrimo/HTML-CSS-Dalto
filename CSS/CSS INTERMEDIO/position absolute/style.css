@@ -1,0 +1,49 @@
+/*CUANDO SE LE DA EL VALOR DE ABSOLUTE A LA POSICION DE UN ELEMENTO ESTE YA NO VA A TENER UNA POSICION EN LA PAGINA Y CUANDO LE DEMOS VALORES DE IZQ DERECHA ARRIBA O ABAJO, EN VEZ DE TOMAR COMO PUNTO DE REFERENCIA LA POSICION QUE LE HABIA DADO EL NAVEGADOR, TOMARA COMO REFERENCIA LA ETIQUETA HTML LO QUE HARA QUE EL ELEMENTO SE DESPLACE DIFERENTE Y NOS ROMPA EL LAYOUT DE LA PAGINA
+PARA QUE EL ELEMENTO TOME COMO PUNTO DE REFERENCIA PARA DESPLAZARSE  EL CONTENEDOR DONDE ESTA, DEBEREMOS ASIGNARLE AL MISMO EL VALOR DE POSITION RELATIVE.
+CUIDADO!!! EL ELEMENTO QUE TENGA VALOR ABSOLUTE BUSCARA UN ELEMENTO PADRE O ABUELO ETC Y SI ESTE TIENE POSITION RELATIVE LO TOMARA COMO REFERENCIA PARA DESPLAZARSE, SINO USARA LA ETIQUETA HTML.*/
+
+
+
+
+body{
+    margin: 0;
+    background-color: #CCC;
+    font-family: sans-serif;
+    text-align: center;
+}
+
+
+.contenedor{
+    border: 3px solid #000;
+    margin: 30px 50px;
+    background-color: #fff;
+    position: relative;
+}
+
+.box{
+    width: 100px;
+    height: 100px;
+    background-color:aqua;   
+    color: #fff;
+}
+.box--orange{
+    background-color:orange;
+    }
+
+
+.box--blue{
+    background-color: blue;
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    margin: auto;
+    /*al hacer esto centramos la caja dentro del contenedor*/
+    }
+
+.box--green{
+    background-color: green;
+
+}
+

@@ -1,0 +1,55 @@
+body {
+    margin: 0;
+    font-family: sans-serif;
+    background-color: #ccc;
+}
+
+
+div {
+    box-sizing: border-box;
+}
+
+
+.box {
+    margin: 20px;
+    background-color: #fff;
+    border: 4px solid #48e;
+    padding: 6px;
+    border-radius: 39px;
+    transition: border 1s steps(10);/*ACA LE DAMOS PARAMETROS A LA TRANSICION DEL BORDE CUANDO VUELVE A SU ESTADO */
+}
+
+
+.barra {
+    padding: 40px;
+    background-color: #48e;
+    border-radius: 30px;
+    width: 10%;
+    transition: width 3s , background-color 3s ;/*ACA  LE DAMOS PARAMETROS A LA TRANSICION CUANDO VUELVE A SU ESTADO NORMAL*/
+    color: #fff;
+
+}
+
+.barra:active {
+    width: 100%;
+    transition-duration: 3s;/*ACA LE DAMOS PARAMETROS CUANDO SE ACCIONA LA TRANSICION*/
+    background-color: #f33;
+}
+
+.box:has(.barra:active) {
+
+border: 4px solid #f33;
+transition-duration: 3s;/*ACA LE ESTAMOS DANDO PARAMETROS A LA TRANSICION DEL BORDE*/
+
+}
+
+
+/*TAMBIEN SE PUEDEN DESACTIVAR LAS ANIMACIONES O TRANSICIONES SI EL USUARIO ASI LO REQUIERE POR CUESTIONES DE EPILEPSIA O ETC
+
+@media (prefers-reduced-motion: reduce){
+    .barra, .box{
+        transition:none;
+        animacion:none;
+    }
+}
+*/

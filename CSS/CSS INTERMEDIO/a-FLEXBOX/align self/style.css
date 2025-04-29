@@ -1,0 +1,54 @@
+
+body {
+    margin: 0;
+    font-family: sans-serif;
+    background-color: #ccc;
+}
+
+div, body {
+    box-sizing: border-box;
+}
+.flexbox {
+    display: flex;
+    flex-flow:row wrap;
+    height: 300px;
+    margin: 20px;
+    border: 2px solid #000;
+    align-items:start;
+    gap: 30px
+    ;
+  
+
+
+
+}
+
+
+.flex-item {
+    
+    background-color:#800;
+    color: #fff;
+    font-size: 40px;
+    text-align: center;
+    border: 1px solid #000;
+    flex: 1 1 100px;
+
+
+
+    
+}
+
+.flex-item:first-child{
+    background-color: #f77;
+    }
+
+.flex-item:last-child {
+    background-color: #000;
+}
+
+.item-5 {
+    align-self: stretch;/*MIENTRAS LA FLEXBOX TENGA UN VALOR DE ALIGN ITEMS, CADA UNO DE ESOS ITEMS PODRA TENER UN ALIGN SELF*/
+}
+
+
+
